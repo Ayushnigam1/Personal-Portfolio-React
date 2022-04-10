@@ -2,10 +2,10 @@ import React, { useContext } from "react";
 import "./Portfolio.css";
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css";
-import Sidebar from "../../img/sidebar.png";
-import Ecommerce from "../../img/ecommerce.png";
-import HOC from "../../img/hoc.png";
-import MusicApp from "../../img/musicapp.png";
+import sristspace from "../../img/sristspace.jpeg";
+import weather from "../../img/weather.png";
+import newsapp from "../../img/newsapp.png";
+import spotify from "../../img/spotify.png";
 import { themeContext } from "../../Context";
 const Portfolio = () => {
   const theme = useContext(themeContext);
@@ -23,17 +23,18 @@ const Portfolio = () => {
         grabCursor={true}
         className="portfolio-slider"
       >
+      <a href="https://sristspace.herokuapp.com"><SwiperSlide>
+       <img src={sristspace} alt="" />
+        </SwiperSlide>
+        </a>
         <SwiperSlide>
-          <img src={Sidebar} alt="" />
+          <img src={weather} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Ecommerce} alt="" />
+          <img src={spotify} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={MusicApp} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={HOC} alt="" />
+          <img src={newsapp} alt="" />
         </SwiperSlide>
       </Swiper>
     </div>

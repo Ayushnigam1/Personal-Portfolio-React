@@ -25,11 +25,16 @@ const Services = () => {
       <div className="awesome">
         {/* dark mode */}
         <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
-        <span>services</span>
+        <span>Skills</span>
         <spane>
-          Lorem ispum is simpley dummy text of printing of printing Lorem
-          <br />
-          ispum is simpley dummy text of printing
+        <p>I'm a dedicated programmer and love to do <b>CP</b> in Python language</p>
+        <p>There are some online course <b>certificates</b> link which is done by me</p>
+        <a style={{textDecoration:"none"}} href="https://www.hackerrank.com/certificates/eaded1645600">Python certificate </a>
+        <br/>
+        <a style={{textDecoration:"none"}} href="https://olympus1.greatlearning.in/course_certificate/EHCTIIDU">MySql certificate </a>
+        <br/>
+        <a style={{textDecoration:"none"}} href="https://www.credly.com/badges/aa197aa5-9a2b-405f- a54b-a1d6f264b49b?source=linked_in_profile
+        ">Introduction to Network certificate </a>
         </spane>
         <a href={Resume} download>
           <button className="button s-button">Download CV</button>
@@ -46,8 +51,8 @@ const Services = () => {
         >
           <Card
             emoji={HeartEmoji}
-            heading={"Design"}
-            detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
+            heading={"Programming Language"}
+            detail={"I use to do programming in C ,  C++,  Python , SQL database"}
           />
         </motion.div>
         {/* second card */}
@@ -59,7 +64,8 @@ const Services = () => {
           <Card
             emoji={Glasses}
             heading={"Developer"}
-            detail={"Html, Css, JavaScript, React, Nodejs, Express"}
+            detail={"Html, Css, JavaScript, React, Nodejs, Express, Django, Mongodb, Figma, Django, Typescript"}
+            
           />
         </motion.div>
         {/* 3rd */}
@@ -70,11 +76,11 @@ const Services = () => {
         >
           <Card
             emoji={Humble}
-            heading={"UI/UX"}
+            heading={"Comptetive Programming"}
             detail={
-              "Lorem ispum dummy text are usually use in section where we need some random text"
+              "Now a days I love to do CP and My highest rating in codechef is 1636. Once I win the Codekhaze and secured  2nd rank in RGPV"
             }
-            color="rgba(252, 166, 31, 0.45)"
+            color="#DDF8FE"
           />
         </motion.div>
         <div

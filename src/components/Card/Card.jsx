@@ -1,13 +1,16 @@
-import React from "react";
+import React,{useContext} from "react";
+import { themeContext } from "../../Context";
 import "./Card.css";
 
 const Card = ({emoji, heading, detail, color}) => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
-    <div className="card" style={{borderColor: {color}}}> 
+    <div className="card" style={{borderColor: "#DDF8FE"}}> 
       <img src={emoji} alt="" />
       <span>{heading}</span>
-      <span>{detail}</span>
-      <button className="c-button">LEARN MORE</button>
+      <span style={{color: darkMode ? "skyblue" : "blue"}}>{detail}</span>
+      
     </div>
   );
 };
